@@ -1,0 +1,10 @@
+[servers]
+
+[servers.localhost]
+os = "redhat"
+host = "localhost"
+port = "local"
+
+[servers.localhost.containers]
+type = "docker"
+includes = ["${running}"]
